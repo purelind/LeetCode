@@ -14,10 +14,8 @@ class Solution(object):
             for i in range(32):
                 count += intNumber & 1
                 intNumber >>= 1
-
             return count
-        xorInt = x ^ y
-        return numberOfOneBits(xorInt)
+        return numberOfOneBits(x ^ y)
 
 solve = Solution()
 print(solve.hammingDistance(4, 1))
