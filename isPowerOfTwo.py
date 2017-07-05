@@ -5,9 +5,6 @@ class Solution(object):
         :param n: int
         :return: bool
         """
-        count = 0
-        # if n <= 0:
-        #     return False
         hasOne = False
         while n > 0:
             if n & 1:
@@ -17,5 +14,6 @@ class Solution(object):
                     hasOne = True
             n >>= 1
         return hasOne
+
 solve = Solution()
 print(solve.isPowerOfTwo(64))
