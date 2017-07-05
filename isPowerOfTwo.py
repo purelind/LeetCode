@@ -1,7 +1,7 @@
 class Solution(object):
     def isPowerOfTwo(self, n):
         """
-
+        Given an integer, write a function to determine if it is a power of two.
         :param n: int
         :return: bool
         """
