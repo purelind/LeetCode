@@ -10,7 +10,8 @@ class Solution(object):
         heights.append(0)
         maxRectangleArea = 0
         searchIndex = 0
-        while searchIndex < len(heights):
+        length = len(heights)
+        while searchIndex < length:
             if not stack or heights[searchIndex] > heights[stack[-1]]:
                 stack.append(searchIndex)
                 searchIndex += 1
