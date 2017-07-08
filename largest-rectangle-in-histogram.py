@@ -22,6 +22,6 @@ class Solution(object):
         return maxRectangleArea
 
 solve = Solution()
-print(solve.largestRectangleArea([1]))
+print(solve.largestRectangleArea([1,1,1]))
 
 
