@@ -18,6 +18,8 @@ class Solution(object):
         }
         from functools import reduce
         return reduce(lambda acc, digits: [x + y for x in acc for y in kvmaps[digits]], digits, [''])
+
+
 #  functools.reduce(function, iterable[, initializer])
 # @ funtion ==> lambda函数
 # @ iterable ==> digits字符串
@@ -29,7 +31,7 @@ class Solution(object):
 # 可以将acc看作是保存暂时结果的的list，该list会保存对于当前digits中的digit得到的[x + y for x in acc for y in kvmaps[digits]]
 # 结果。即acc等同于function(kvmap(current_digit))
 
-#不知道解释对不对。暂且这样理解.
+# 不知道解释对不对。暂且这样理解.
 # 链接：https://discuss.leetcode.com/topic/11783/one-line-python-solution/16
 
 
