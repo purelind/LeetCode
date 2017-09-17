@@ -14,7 +14,7 @@ class Solution(object):
         """
         return not root or self.isSymmetircHelp(root.left, root.right)
 
-    def isSymmetircHelp(self,left, right):
+    def isSymmetircHelp(self, left, right):
         if not left or not right:
             return left == right
         if left.val != right.val:
