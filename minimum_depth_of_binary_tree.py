@@ -5,6 +5,7 @@
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def minDepth(self, root):
         """
@@ -20,4 +21,4 @@ class Solution(object):
             return left + right + 1
         else:
             return min(left, right) + 1
-        
+
